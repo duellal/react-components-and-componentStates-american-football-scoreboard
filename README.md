@@ -36,8 +36,8 @@ In this project, you build an app that displays a scoreboard for an American foo
 
 #### Adding Team Scores to the Component's State
 
-- [ ] Import the `useState` hook
-- [ ] Set up the state values for the Lions team score using the state hook
+- [X] Import the `useState` hook
+- [X] Set up the state values for the Lions team score using the state hook
 
 ```js
 const [value, setValue] = useState(); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValue
