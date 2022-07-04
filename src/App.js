@@ -7,9 +7,9 @@ import "./App.css";
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 
-  {/* Trying to get the button "New Game" to reset board. Whenever another button other than "New Game" is pushed, the homeScore, awayScore and Quarter boxes all collapse and you cannot see the numbers. Unsure why this is happening. 
+  /* Trying to get the button "New Game" to reset board. Whenever another button other than "New Game" is pushed, the homeScore, awayScore and Quarter boxes all collapse and you cannot see the numbers. Unsure why this is happening. 
 
-  Commented out this code b/c I could not figure out how to make it work as well as make the other buttons work. */ }
+  Commented out this code b/c I could not figure out how to make it work as well as make the other buttons work. */
   // const initialState = {
   //   homeScore: 0,
   //   awayScore: 0,
