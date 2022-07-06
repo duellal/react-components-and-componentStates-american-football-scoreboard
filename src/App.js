@@ -6,20 +6,15 @@ import "./App.css";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
-
-  /* Trying to get the button "New Game" to reset board. Whenever another button other than "New Game" is pushed, the homeScore, awayScore and Quarter boxes all collapse and you cannot see the numbers. Unsure why this is happening. 
-
-  Commented out this code b/c I could not figure out how to make it work as well as make the other buttons work. */
-  // const initialState = {
-  //   homeScore: 0,
-  //   awayScore: 0,
-  //   quarter: 1
-  // }
-  // const [{ homeScore, awayScore, quarter }, setState] = useState(initialState)
-
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
   const [quarter, setQuarter] = useState(1);
+
+  const resetGame = () => {
+    setHomeScore(0);
+    setAwayScore(0);
+    setQuarter(1);
+  }
 
   return (
     <div className="container">
@@ -41,10 +36,7 @@ function App() {
         </div>
         <div className='bottomRowButtons'>
           <button className='nextQuarter' onClick={() => { if (quarter < 4) { setQuarter(quarter + 1) } }}>Next Quarter</button>
-          {/* Could not get the "New Game" button below to reset all the boxes
-          
-          Deleted the onClick function to get rid of the errors*/}
-          <button className='newGame'> New Game </button>
+          <button className='newGame' onClick={resetGame}> New Game </button>
         </div>
       </section >
     </div >
